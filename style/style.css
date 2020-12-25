@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fr100: 'Roboto-Thin';
+    --fr300: 'Roboto-Light';
+    --fr400: 'Roboto-Regular';
+    --fr500: 'Roboto-Medium';
+    --fr700: 'Roboto-Bold';
+    --fr900: 'Roboto-Black';
+    --fo700: 'Open Sans-Bold';
+    --fm400: 'Myriad Pro-Regular';
+}
+
+/* ================= header ====================== */
+.header {
+    background: url(../images/header_bg.png) 50% 50% /cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header__nav {
+    background: white;
+    padding: 50px 0;
+}
+
+.header__logo {
+    font-size: 40px;
+    font-family: var(--fr900);
+    color: rgba(1, 21, 85, 0.7);
+    padding: 0;
+    margin-right: 0;
+    line-height: 30px;
+}
+
+.header__logo:hover {
+    color: rgba(1, 21, 85, 0.7);
+}
+
+.header__btn {
+    font-size: 32px;
+
+}
+
+.header__button {
+    padding: 0;
+}
+
+.header__button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.header__content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header__title{
+    font-size: 50px;
+    font-family: var(--fr100);
+    color: #626262;
+    line-height: 44px;
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+.header__title_span{
+    font-family: var(--fr700);
+    color: #011556;
+}
+
+.header__content_description{
+    font-family: var(--fr300);
+    font-size: 16px;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* ================= /header ====================== */
