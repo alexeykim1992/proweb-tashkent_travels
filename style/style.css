@@ -1,6 +1,10 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* outline: 1px dotted black; */
 }
 
 :root {
@@ -12,6 +16,15 @@
     --fr900: 'Roboto-Black';
     --fo700: 'Open Sans-Bold';
     --fm400: 'Myriad Pro-Regular';
+
+    --blue: #011556;
+    --gray: #808080;
+    --light_gray: #c7c7c7;
+    --light_light_gray: #fbfbfb;
+}
+
+p {
+    margin-bottom: 0;
 }
 
 /* ================= header ====================== */
@@ -24,7 +37,7 @@
 
 .header__nav {
     background: white;
-    padding: 50px 0;
+    height: 12vh;
 }
 
 .header__logo {
@@ -54,13 +67,13 @@
     box-shadow: none;
 }
 
-.header__content{
+.header__content {
     flex-grow: 1;
     display: flex;
     align-items: center;
 }
 
-.header__title{
+.header__title {
     font-size: 50px;
     font-family: var(--fr100);
     color: #626262;
@@ -69,12 +82,12 @@
     text-align: center;
 }
 
-.header__title_span{
+.header__title_span {
     font-family: var(--fr700);
     color: #011556;
 }
 
-.header__content_description{
+.header__content_description {
     font-family: var(--fr300);
     font-size: 16px;
     color: black;
@@ -82,4 +95,433 @@
     text-align: center;
 }
 
+.header__form {
+    margin-top: 5vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px 15px;
+}
+
+.header-form_title {
+    font-family: var(--fr400);
+    font-size: 20px;
+    color: var(--blue);
+    line-height: 16px;
+}
+
+.header-form_field {
+    display: block;
+    font-family: var(--fr400);
+    font-size: 15px;
+    color: black;
+    line-height: 11px;
+    margin-top: 25px;
+    padding: 10px;
+    width: 295px;
+    border: none;
+    border-bottom: 1px var(--light_gray) solid;
+}
+
+.header-form_field:first-of-type {
+    margin-top: 25px;
+}
+
+.header-form_message {
+    resize: none;
+    height: 90px;
+    margin-bottom: 25px;
+}
+
+.header-form_button {
+    font-family: var(--fr700);
+    font-size: 16px;
+    color: white;
+    width: 240px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+    border-radius: 25px;
+}
+
+.header-form_arrow {
+    margin-left: 5px;
+}
+
 /* ================= /header ====================== */
+
+/* ================= main ====================== */
+/* =========== section_directions ================ */
+.main__directions {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.directions_title {
+    font-family: var(--fr900);
+    font-size: 50px;
+    color: var(--blue);
+    line-height: 36px;
+    margin-bottom: 200px;
+}
+
+.directions_title {
+    text-align: center;
+}
+
+.directions_panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.direction-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direction-item_img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px -5px black;
+}
+
+.direction-item_title {
+    font-family: var(--fr900);
+    font-size: 36px;
+    color: var(--blue);
+    text-decoration: underline;
+    line-height: 26px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.direction-item_title:hover {
+    color: var(--blue);
+}
+
+/* =========== /section_directions ================ */
+
+/* =========== /section_cities ================ */
+.main__cities {
+    background: var(--light_light_gray);
+    padding: 70px 0;
+}
+
+.main__cities_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city-card {
+    overflow: hidden;
+}
+
+.city-card:nth-of-type(-n+6) {
+    margin-bottom: 25px;
+}
+
+.cities_title {
+    font-family: var(--fr900);
+    font-size: 50px;
+    color: var(--blue);
+    line-height: 36px;
+    margin-bottom: 50px;
+}
+
+.cities_description {
+    font-family: var(--fr500);
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+.city-card_hover {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transform: scale(2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background: rgba(215, 220, 236, 0.7);
+    transition: 0.5s;
+}
+
+.city-card_title {
+    font-family: var(--fr400);
+    font-size: 30px;
+    color: var(--blue);
+    line-height: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.city-card_description {
+    font-family: var(--fr400);
+    font-size: 14px;
+    color: var(--blue);
+    line-height: 25px;
+    margin-bottom: 70px;
+    text-align: center;
+    max-width: 210px;
+}
+
+.city-card_button {
+    font-family: var(--fr400);
+    font-size: 17px;
+    color: white;
+    background: var(--blue);
+    width: 145px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.city-card_button:hover {
+    color: var(--blue);
+    background: white;
+    border: 2px var(--blue) solid;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.city-card_img {
+    height: 350px;
+    width: 350px;
+}
+
+.city-card:hover .city-card_hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* =========== /section_cities ================ */
+
+/* =========== section_documents ================ */
+.main__documents {
+    padding: 70px 0 280px;
+}
+
+.documents_title {
+    font-family: var(--fr900);
+    font-size: 50px;
+    color: var(--blue);
+    line-height: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.documents_description,
+.document-item {
+    margin-top: 30px;
+    font-family: var(--fr400);
+    font-size: 20px;
+    color: black;
+    line-height: 28px;
+}
+
+.documents_list li::before {
+    content: "-";
+    margin-right: 40px;
+}
+
+/* =========== /section_documents ================ */
+
+/* =========== section_best-tours ================ */
+.main__best-tours {
+    background: var(--light_light_gray);
+    padding: 70px 0 100px;
+}
+
+.best-tours_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-tours_panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-tours_title {
+    font-family: var(--fr900);
+    font-size: 50px;
+    color: var(--blue);
+    line-height: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.best-tours_description {
+    font-family: var(--fr400);
+    font-size: 16px;
+    color: black;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.best-tour_item_img {
+    box-shadow: 0 10px 24px -5px var(--gray);
+}
+
+.best-tour_item_info {
+    height: 80px;
+    width: 265px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(100% - 40px);
+    left: calc(50% - 132px);
+    box-shadow: 0 10px 24px -5px var(--gray);
+}
+
+.best-tour_item_title {
+    font-family: var(--fr500);
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    line-height: 21px;
+}
+
+.best-tour_item_price {
+    font-family: var(--fr500);
+    font-size: 24px;
+    color: var(--blue);
+    text-align: center;
+    line-height: 21px;
+}
+
+/* =========== /section_best-tours ================ */
+
+/* =========== section_reviews ================ */
+.main__reviews{
+    padding: 70px 0;
+}
+
+.reviews_title {
+    font-family: var(--fr900);
+    font-size: 50px;
+    color: var(--blue);
+    line-height: 36px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.reviews_description {
+    font-family: var(--fr500);
+    font-size: 16px;
+    color: black;
+    margin-bottom: 140px;
+    text-align: center;
+}
+
+.reviews_panel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-item {
+    position: relative;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    width: 530px;
+    margin: 0 15px;
+    box-shadow: 0 0 15px 0 var(--light_gray);
+}
+
+.review-item:last-of-type {
+    margin-top: 60px;
+}
+
+.review-item_photo {
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 50px);
+    top: -40px;
+}
+
+.review-item_text,
+.reviwe-item_author {
+    font-family: var(--fr500);
+    font-size: 17px;
+    color: black;
+    margin: 0 45px;
+    line-height: 24px;
+}
+
+.review-item_rating {
+    color: yellow;
+    margin: 20px 0;
+}
+
+/* =========== /section_reviews ================ */
+/* ================= /main ====================== */
+
+/* ================= footer ====================== */
+.footer{
+    background: #f7f7f7;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.footer__button{
+    background: var(--blue);
+    color: white;
+    font-family: var(--fm400);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 240px;
+    height: 55px;
+    margin: 0 auto 30px;    
+}
+
+.footer__socials_panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__socials_button{
+    width: 55px;
+    height: 55px;
+    color: white;
+    background: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.footer__socials_button:last-of-type{
+    margin-right: 45px;
+}
+
+.footer__socials_button:hover{
+    background: var(--blue);
+}
+/* ================= /footer ====================== */
