@@ -498,6 +498,14 @@ p {
     margin: 0 auto 30px;    
 }
 
+.footer__button:hover{
+    color: var(--blue);
+    background: white;
+    font-weight: bold;
+    border: 2px var(--blue) solid;
+    text-decoration: none;
+}
+
 .footer__socials_panel{
     display: flex;
     justify-content: center;
@@ -522,6 +530,14 @@ p {
 }
 
 .footer__socials_button:hover{
-    background: var(--blue);
+    background: var(--blue);    
+    color: white;
+    text-decoration: none;
+}
+
+.footer__authors{
+    font-family: var(--fm400);
+    font-size: 17px;
+    color: #040404;
 }
 /* ================= /footer ====================== */
