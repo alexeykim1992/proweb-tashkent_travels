@@ -38,8 +38,8 @@ p {
 }
 
 .header__nav {
-    background: white;
-    height: 12vh;
+    background: white;    
+    height: 12vh;   
 }
 
 .header__logo {
@@ -57,7 +57,24 @@ p {
 
 .header__btn {
     font-size: 32px;
+}
 
+.nav__menu{
+    text-align: center;
+    background: var(--light_light_gray);
+    width: 150px;
+}
+
+.nav__link{
+    font-family: var(--fr500);
+    font-size: 16px;
+    color: var(--blue);
+}
+
+.nav__link:hover{
+    text-decoration: none;
+    color: white;
+    background: var(--blue);
 }
 
 .header__button {
