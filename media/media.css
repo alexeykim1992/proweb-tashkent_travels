@@ -93,7 +93,7 @@
         height: 45px;
     }
 
-    .main__documents{
+    .main__documents {
         padding: 55px 0 200px;
     }
 
@@ -108,77 +108,77 @@
         margin-top: 20px;
     }
 
-    .main__best-tours{
+    .main__best-tours {
         padding: 50px 0 85px;
     }
 
-    .best-tours_title{
-        font-size: 40px;        
+    .best-tours_title {
+        font-size: 40px;
     }
 
-    .best-tours_description{
+    .best-tours_description {
         margin-bottom: 120px;
     }
 
-    .best-tour_item_info{
+    .best-tour_item_info {
         width: 220px;
         height: 70px;
         left: calc(50% - 110px);
         top: calc(100% - 35px);
     }
 
-    .best-tour_item_title{
+    .best-tour_item_title {
         font-size: 24px;
     }
 
-    .best-tour_item_price{
+    .best-tour_item_price {
         font-size: 22px;
     }
 
-    .main__reviews{
+    .main__reviews {
         padding: 50px 0;
     }
 
-    .reviews_title{
+    .reviews_title {
         font-size: 40px;
         margin-bottom: 60px;
     }
 
-    .review-item_text{
+    .review-item_text {
         max-width: 400px;
     }
 
-    .review-item{
+    .review-item {
         padding-top: 75px;
         padding-bottom: 30px;
     }
 
-    .review-item_photo{
+    .review-item_photo {
         width: 90px;
         height: 90px;
         left: calc(50% - 45px);
 
     }
 
-    .review-item_rating{
+    .review-item_rating {
         margin: 15px 0;
     }
 
-    .reviews_description{
+    .reviews_description {
         margin-bottom: 100px;
     }
 
-    .footer{
+    .footer {
         padding-top: 50px;
         padding-bottom: 35px;
     }
 
-    .footer__button{
+    .footer__button {
         width: 200px;
-        height: 50px;        
+        height: 50px;
     }
 
-    .footer__socials_button{
+    .footer__socials_button {
         width: 45px;
         height: 45px;
         font-size: 18px;
@@ -188,196 +188,404 @@
 
 }
 
-@media(max-width: 991px){
-    .header__logo{
+@media(max-width: 991px) {
+    .header__logo {
         font-size: 30px;
     }
 
-    .header__btn{
+    .header__btn {
         font-size: 24px;
     }
 
-    .header__title{
+    .header__title {
         font-size: 30px;
         margin-bottom: 10px;
     }
 
-    .header__content_description{
+    .header__content_description {
         font-size: 14px;
         line-height: 18px;
     }
 
-    .header-form_title{
+    .header-form_title {
         font-size: 18px;
     }
 
-    .header-form_field{
+    .header-form_field {
         padding: 5px 10px;
         font-size: 14px;
         margin-top: 10px;
         width: 220px;
     }
 
-    .header-form_button{
+    .header-form_button {
         width: 195px;
         height: 40px;
         font-size: 14px;
     }
 
-    .main__directions{
+    .main__directions {
         padding: 50px 0;
     }
 
-    .directions_title{
+    .directions_title {
         font-size: 34px;
         margin-bottom: 80px;
     }
 
-    .direction-item_img{
+    .direction-item_img {
         width: 150px;
         height: 150px;
     }
 
-    .direction-item_title{
+    .direction-item_title {
         font-size: 26px;
         margin-top: 30px;
     }
 
-    .main__cities{
+    .main__cities {
         padding: 50px 0;
     }
 
-    .cities_title{
+    .cities_title {
         font-size: 34px;
         margin-bottom: 25px;
     }
 
-    .cities_description{
+    .cities_description {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 60px;
     }
 
-    .city-card_hover{
+    .city-card_hover {
         width: 210px;
         height: 210px;
     }
 
-    .city-card_button{
+    .city-card_button {
         font-size: 16px;
         width: 120px;
         height: 35px;
     }
 
-    .city-card_button:hover{
+    .city-card_button:hover {
         border: 1px var(--blue) solid;
     }
 
-    .city-card_title{
+    .city-card_title {
         font-size: 24px;
         margin-bottom: 10px;
         line-height: 20px;
     }
 
-    .city-card_description{
+    .city-card_description {
         margin-bottom: 10px;
         max-width: 190px;
         line-height: 18px;
     }
 
-    .city-card_img{
+    .city-card_img {
         width: 210px;
         height: 210px;
     }
 
-    .main__documents{
+    .main__documents {
         padding: 50px 0 100px;
     }
 
-    .documents_title{
+    .documents_title {
         font-size: 30px;
         margin-bottom: 15px;
     }
 
-    .documents_description, .document-item {
+    .documents_description,
+    .document-item {
         font-size: 16px;
         margin-top: 10px;
-        line-height: 22px;   
-        text-align: justify; 
+        line-height: 22px;
+        text-align: justify;
     }
 
-    .main__best-tours{
+    .main__best-tours {
         padding: 40px 0 75px;
     }
 
-    .best-tours_title{
+    .best-tours_title {
         font-size: 34px;
         margin-bottom: 20px;
     }
 
-    .best-tours_description{
+    .best-tours_description {
         line-height: 23px;
         margin-bottom: 70px;
     }
 
-    .best-tour_item_info{
+    .best-tour_item_info {
         width: 140px;
         height: 55px;
         left: calc(50% - 70px);
         top: calc(100% - 27px);
     }
 
-    .best-tour_item_title{
+    .best-tour_item_title {
         font-size: 20px;
         margin-bottom: 0;
     }
 
-    .best-tour_item_title_span{
+    .best-tour_item_title_span {
         display: none;
     }
 
-    .best-tour_item_price{
+    .best-tour_item_price {
         font-size: 18px;
     }
 
-    .reviews_title{
+    .reviews_title {
         font-size: 34px;
         margin-bottom: 35px;
     }
 
-    .reviews_description{
+    .reviews_description {
         margin-bottom: 75px;
     }
 
-    .review-item_photo{
+    .review-item_photo {
         width: 80px;
         height: 80px;
         left: calc(50% - 40px);
     }
 
-    .review-item_text{
+    .review-item_text {
         font-size: 15px;
         line-height: 20px;
         max-width: 280px;
     }
 
-    .review-item_rating{
+    .review-item_rating {
         margin: 10px 0;
     }
 
-    .review-item{
+    .review-item {
         padding-top: 55px;
         padding-bottom: 30px;
     }
 
-    .footer{
+    .footer {
         padding-top: 35px;
         padding-bottom: 20px;
     }
 
-    .footer__button{
+    .footer__button {
         width: 170px;
         height: 45px;
-        margin-bottom: 0 auto 15px;
+        margin: 0 auto 15px;
     }
+}
+
+@media(max-width: 767px) {
+    .header__logo {
+        font-size: 26px;
+    }
+
+    .header__btn {
+        font-size: 20px;
+    }
+
+    .header__nav {
+        height: 40px;
+    }
+
+    .header__title {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .header__content_description {
+        text-align: center;
+    }
+
+    .header__form {
+        padding: 15px 10px 10px;
+    }
+
+    .header-form_title {
+        font-size: 16px;
+    }
+
+    .header-form_field {
+        width: 180px;
+        margin-top: 10px;
+    }
+
+    .header-form_message {
+        height: 60px;
+    }
+
+    .header-form_button {
+        text-transform: capitalize;
+        width: 140px;
+        height: 35px;
+    }
+
+    .header-form_button_span {
+        display: none;
+    }
+
+    .main__directions {
+        padding: 30px 0;
+    }
+
+    .directions_title {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .direction-item_img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .direction-item_title {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .main__cities {
+        padding: 30px 0;
+    }
+
+    .cities_title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .cities_description {
+        display: none;
+    }
+
+    .city-card_hover {
+        width: 240px;
+        height: 240px;
+    }
+
+    .city-card_description{
+        line-height: 20px;
+    }
+
+    .cities_panel {
+        justify-content: center;
+    }
+
+    .city-card_img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .city-card:last-of-type {
+        margin-top: 25px;
+    }
+
+    .main__documents{
+        padding: 30px 0 50px;
+    }
+
+    .documents_title {
+        font-size: 26px;
+    }
+
+    .documents_description,
+    .document-item {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 5px;
+    }
+
+    .documents_list {
+        margin-bottom: 0;
+    }
+
+    .main__best-tours{
+        padding: 30px 0 50px;
+    }
+
+    .best-tours_panel{
+        justify-content: center;
+    }
+
+    .best-tours_title{
+        font-size: 28px;
+    }   
+
+    .best-tours_description{
+        display: none;
+    }
+
+    .best-tour_item:last-of-type{
+        margin-top: 50px;
+    }
+
+    .best-tour_item_info{
+        width: 140px;
+        height: 45px;
+        left: calc(50% - 70px);
+        top: calc(100% - 23px);
+    }
+
+    .best-tour_item_title{
+        font-size: 18px;
+    }
+
+    .best-tour_item_price{
+        font-size: 16px;
+    }
+
+    .main__reviews{
+        padding: 30px 0 50px;
+    }
+
+    .reviews_title{
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .review-item_text{
+        max-width: 350px;
+        font-size: 14px;
+    }
+
+    .reviews_description{
+        display: none;
+    }
+
+    .review-item_container:nth-of-type(n) .review-item {
+        margin-top: 60px;
+    }
+
+    .footer{
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    .footer__button{
+        width: 120px;
+        height: 35px;
+        margin: 0 auto 10px;
+    }
+
+    .footer__socials_button{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .footer__socials_button:last-of-type{
+        margin-right: 20px;
+    }
+
+    .footer__authors{
+        font-size: 14px;
+    }
+
 }

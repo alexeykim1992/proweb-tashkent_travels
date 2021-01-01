@@ -120,7 +120,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 40px 15px;
+    padding: 30px 40px 15px;    
+    border-radius: 3px;
 }
 
 .header-form_title {
