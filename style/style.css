@@ -60,9 +60,11 @@ p {
 }
 
 .nav__menu{
+    position: relative;
     text-align: center;
     background: var(--light_light_gray);
     width: 150px;
+    z-index: 1;
 }
 
 .nav__link{
